@@ -2,18 +2,32 @@ body {
 	margin:0;
 	background-image:url(../img/snowpainting.jpg);
 	background-attachment:fixed;
+	font-family:  Arial, Helvetica, sans-serif;
 }
 
-nav{
-	background-color: #4f6083;
-	height:85px;
+#nav-container{
+	background-color: #41506f;
+	height:45px;
+}
+
+#main-image img:first-child {
+	display:none;
+}
+
+#main-image img:nth-child(2) {
+	display:none;
+	width:100%;
+}
+
+#main-image img:nth-child(3) {
+	width:100%;
 }
 
 #blognav {
 	background-color: #e0c660;
 	height:40px;
 	text-align: center;
-	padding:8px;
+	padding:8px 14px;
 	box-sizing: border-box;
 }
 
@@ -42,15 +56,19 @@ nav ul {
 	text-decoration: none;
 }
 
-nav a:nth-child(3){
+#social-media {
+	display:none;
+}
+
+#nav-container > a:nth-child(2){
 	float:right;
 	margin-right: 10px;
-	margin-top: 10px;
+	margin-top: 12px;
 	display:block;
 }
 
-nav a:nth-child(2) {
-	line-height: 35px;
+#nav-container > a:nth-child(1) {
+	line-height: 45px;
 	margin-left:10px;
 	text-decoration: none;
 }
@@ -71,10 +89,8 @@ nav button {
 
 }
 
-#main-image img {
-	min-width: 800px;
+#main-image img:first-child {
 	width:100%;
-	display:block;
 }
 
 #text-box {
@@ -106,8 +122,9 @@ nav button {
 	border-width: 43px 43px 0 43px;
 	border-color: #4f6083 transparent transparent transparent;
 	position: absolute;
-	top:0;
-	left:45%;
+	top:22px;
+	left: 50%;
+	transform: translate(-50%, -50%);
 
 
 }
@@ -121,7 +138,8 @@ nav button {
 }
 
 
-#about {
+#about, 
+#commissions{
 	background: white;
 	padding: 50px 30px;
 
@@ -151,9 +169,56 @@ nav button {
 	display:none;
 }
 
+#artwork-arrow {
+	display:none;
+}
+.fixed-nav {
+	z-index: 9999;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 4px 2px -2px #444444;
+
+}
 
 
-@media all and (min-width: 720px) {
+
+
+
+
+@media all and (min-width: 420px) {
+
+	#main-image img:nth-child(2) {
+		display:block;
+		width:100%;
+	}
+
+	#main-image img:nth-child(3) {
+		width:100%;
+		display:none;
+	}
+
+}
+
+
+
+
+@media all and (min-width: 580px) {
+
+	#social-media {
+		display:inline-block;
+		float:left;
+		font-size: 24px;
+	}
+
+	#social-media a{
+		margin-right: 20px;
+	}
+
+	#artwork-arrow {
+	display:block;
+	}
 
 	#text-box {
 		font-size: 35px;
@@ -163,7 +228,7 @@ nav button {
 		display:none;
 	}
 
-	nav a:nth-child(3){
+	#nav-container > a:nth-child(2){
 		display: none;
 		color:red;
 	}
@@ -172,7 +237,7 @@ nav button {
 		display:inline-block;
 		float :right;
 		margin:0;
-		margin-top: 5px;
+		margin-top: 14px;
 
 	}
 
@@ -200,25 +265,53 @@ nav button {
 
 	#artwork-container {
 	display: block;
+	}
+
+	.top-title{
+		margin-top: 150px;
+	}
+
+	#column-one,
+	#column-two,
+	#column-three {
+		padding:0 20px;
+
+	}
+
+
 }
 
 
 
+@media all and (min-width: 960px) {
+
+	#main-image img:nth-child(1) {
+		display:block;
+		width:100%;
+		}
+
+	#main-image img:nth-child(2) {
+		display:none;
+	}
+
 }
-
-
-
-
-
-
 
 @media all and (min-width: 1100px) {
 
-	.triangle-arrow {
-		left:47%;
+	#commission-title {
+		background-color: white;
 	}
 
-	.bottom-arrow{
+	#commission-title h2{
+		color:#404141;
+	}
+
+	.top-title{
+		margin-top: 0;
+	}
+
+	.bottom-arrow, 
+	#artwork-arrow{
 		display:none;
 	}
 
@@ -228,8 +321,11 @@ nav button {
 
 	#about-container{
 		background-color:white;
-		margin-bottom: 200px;
 		padding-bottom: 80px;
+	}
+
+	.top-title {
+		margin-bottom: 400px;
 	}
 
 	#about h2 {
@@ -253,4 +349,62 @@ nav button {
 	#text-box {
 		font-size: 45px;
 	}
-}
+
+	#blog,
+	nav ul {
+		margin-right: 40px;
+	}
+
+	#social-media {
+		margin-left:30px;
+	}
+
+	nav ul li {
+		padding:0 25px;
+	}
+
+	#nav-container > a:nth-child(1) {
+		margin-left: 40px
+	}
+
+	#column-one {
+		padding:5px;
+		box-sizing: border-box;
+		margin-left: 20px;
+		float:left;
+		display: inline-block;
+		width:28.55%;
+
+	}
+
+	#column-two {
+		padding:5px;
+		box-sizing: border-box;
+		display: inline-block;
+		width:29.65%;
+
+	}
+
+	#column-three {
+		padding:5px;
+		box-sizing: border-box;
+		margin-right: 20px;
+		float:right;
+		display: inline-block;
+		width:38%;
+
+	}
+
+	#artwork-desktop img {
+		margin-bottom: 10px;
+	}
+
+	#artwork-desktop {
+		padding-bottom: 40px;
+	}
+
+	h2 {
+		font-size: 34px;
+	}
+
+}	

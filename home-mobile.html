@@ -10,23 +10,34 @@
 	<body>
 		<nav>
 			<div id="blognav">
-				<a href="#"><img src="img/blog-icon.png"><span> Visit my Blog</span></a>
+				<div id="social-media">
+					<a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+					<a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+					<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+				</div>
+				<div id="blog">
+					<a href="#"><img src="img/blog-icon.png"><span> Visit my Blog</span></a>
+				</div>
 			</div>
-			<a href="#">Logo</a>
-			<a href="#"><i class="fa fa-bars" aria-hidden="true"></i></a>
-			<ul>
-				<a href="#"><li>About</li></a>
-				<a href="#"><li>Artwork</li></a>
-				<a href="#"><li>Commissions</li></a>
-				<a href="#"><li>Lessons</li></a>
-				<a href="#"><li>Contact</li></a>
-			</ul>
+			<div id="nav-container">
+				<a href="#">Logo</a>
+				<a href="#"><i class="fa fa-bars" aria-hidden="true"></i></a>
+				<ul>
+					<a href="#"><li>About</li></a>
+					<a href="#"><li>Artwork</li></a>
+					<a href="#"><li>Commissions</li></a>
+					<a href="#"><li>Lessons</li></a>
+					<a href="#"><li>Contact</li></a>
+				</ul>
+			</div>
 			<button>View Artwork</button>
 		</nav>
 		<div class="white-board"></div>
 		<main>
 			<div id="main-image">
 				<img src="img/mainimage.png">
+				<img src="img/mobile-main-image.jpg">
+				<img src="img/smallest-main-image.jpg">
 				<div id="text-box">Named Studio</div>
 			</div>
 			<div class="white-board"></div>
@@ -34,9 +45,10 @@
 				<div class="triangle-arrow"></div>
 			</div>
 
+
 			<div id="about-container" class="top-title">
 				<h2>About the artist</h2>
-				<section id="about">
+				<div id="about">
 					<h2>About the artist</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -44,27 +56,53 @@
 					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				</section>
+				</div>
 			</div>
 			<div class="bottom-arrow">
 				<div class="triangle-arrow"></div>
 			</div>
 
+
 			<div id="artwork-container" class="top-title">
 				<h2>Gallery</h2>
-				<section id="artwork">
-					<img src="http://placehold.it/300x200">
-					<img src="http://placehold.it/300x200">
-					<img src="http://placehold.it/300x200">
-					<img src="http://placehold.it/300x200">
-					<img src="http://placehold.it/300x200">
-					<img src="http://placehold.it/300x200">
-					<img src="http://placehold.it/300x200">
-					<img src="http://placehold.it/300x200">
-					<img src="http://placehold.it/300x200">
-				</section>
+				<div id="artwork-desktop">
+
+					<div id="column-one">
+						<a href="#"><img width="100%" src="img/vehicles.jpg"></a>
+						<a href="#"><img width="100%" src="img/linart-portrait.jpg"></a>
+						<a href="#"><img width="100%" src="img/vehicles-2.jpg"></a>
+					</div>
+
+					<div id="column-two">
+						<a href="#"><img width="100%" src="img/portrait.jpg"></a>
+						<a href="#"><img width="100%" src="img/characterdesign.jpg"></a>
+						<a href="#"><img width="100%" src="img/snowpainting.jpg"></a>
+						<a href="#"><img width="100%" src="img/digital-paint.jpg"></a>
+					</div>
+					<div id="column-three">
+						<a href="#"><img width="45%" src="img/portrait2.jpg"></a>
+						<a href="#"><img width="52%" src="img/buildings.jpg"></a>
+						<a href="#"><img width="100%" src="img/construction.jpg"></a>
+						<a href="#"><img width="100%" src="img/background.jpg"></a>
+					</div>
+				</div>
+			</div>
+			<div  id="artwork-arrow" class="bottom-arrow">
+				<div class="triangle-arrow"></div>
+			</div>
+
+
+			<div id="commission-title" class="top-title"> 
+				<h2>Commissions</h2>
+				<div id="commissions">
+					<section>
+						
+					</section>
+				</div>
 			</div>
 		</main>
 
+		<script src="js/jquery-1.12.4.min.js"></script>
+		<script src="js/Jquery.js"></script>
 	</body>
 </html>
